@@ -1,4 +1,4 @@
-# HFSplus-on-Linux
+# HFSplus on Linux
 
 Linux Free HFSplus driver is limited to 2TB, No Journal, No Raname, etc... </br>
 HDD formated in Linux with HFSplus are called "untitled" </br>
@@ -130,3 +130,4 @@ unless you add to fstab configuration file. </br>
 $ cat /etc/fstab </br>
 
 or use the default automatic mounting point /mnt/untitled  </br>
+despite all that, would be very interesting to see a Linux distro with HFSplus </br>
