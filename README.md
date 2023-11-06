@@ -100,7 +100,7 @@ https://github.com/Paragon-Software-Group/paragon_apfs_sdk_ce </br>
 
 ----------
 
-## What does No-Journaled Really means?
+## What does No-Journaled Really mean?
 
 it means that sometimes, when mounted, wont Write. </br>
 because it had an error previously, Not shutdown properly, power failure, Dolphin or Nautilus crash, Not enough memory, etc..  </br>
