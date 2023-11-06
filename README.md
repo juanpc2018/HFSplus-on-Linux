@@ -27,13 +27,13 @@ but if you need to move too much files, </br>
 it becomes 2x nightmares. </br>
 a quest searching the best Trifecta FS driver, for: </br>
 Win, Mac, Linux. </br>
-ExFAT is discarded, FAT32 worse, NTFS same, </br>
+ExFAT is discarded, FAT32 worse, NTFS discarded, </br>
 Linux Free APFS driver is super bad </br>
-Linux HFSplus is an option, but has some issues. </br>
+Linux free HFSplus is an option, but has some issues. </br>
 
 Workaround: </br>
 have 3 machines, using 10Gbps SFP+ Network, SFP+ 10G Router limited to 1200MB/s. </br>
-or.. </br>
+or... </br>
 Paragon Universal driver, </br>
 more cost effective, No speed limit, less energy consumption. </br>
 when HDD is offline, driver is better, Only 20second wait for drive to turn-on, No boot time, No log-in. </br>
