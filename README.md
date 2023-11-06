@@ -65,23 +65,21 @@ but superior than ExFAT, FAT32, etc... </br>
 can be Read in OSX, No write unless you buy/install NTFS driver for OSX, </br>
 Apple Bootcamp drivers allow to Read/Write HFS+ in Windows, haven tested over 2TB. </br>
 
-XFS is the best file system for large drives 18TB, but Linux Only, havent tested ZFS, APFS. </br>
-Paragon has Read Only XFS drivers for OSX and Windows. </br>
-after much consideration, </br>
-APFS could be the best crossover file system, </br>
+XFS is the best file system for large drives 18TB, Linux Only, havent tested ZFS, APFS. </br>
+Paragon has Read-Only XFS drivers for OSX and Windows. </br>
+after consideration, </br>
+APFS could become the best crossover file system, </br>
 R/W all Operating Systems, </br>
-if paragon makes R/W XFS for Windows & OSX, XFS becomes the standard, </br>
-but APFS today could be the best crossover option. </br>
-like ExFAT but better. </br>
-2nd best option Paragon HFS+, 3rd option free HFSplus. </br>
-to make easier for people to jump into Linux, from other OS. </br>
+if paragon makes R/W XFS for Windows & OSX, i prefer XFS, </br>
+APFS could be like ExFAT but better. </br>
+Over 2TB 2nd best option: </br>
+Paragon HFS+  </br>
+Under 2TB option: </br>
+Linux HFSplus. </br>
+to make easier for people to jump into Linux, from another OS. </br>
 
-Gparted has a Gui version of: </br>
 $ mount -t uapfs \ḑev\sd** \media\uapfs </br>
 $ umount -t uapfs \ḑev\sd** \media\uapfs </br>
-but does Not have -t uapfs </br>
-and... </br>
-[View][File System Support][Rescan] </br>
 
 Apple released HFS+ and APFS as Open Source, </br>
 but Nobody has created a Good version for Linux, </br>
