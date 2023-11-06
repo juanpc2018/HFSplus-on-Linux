@@ -37,9 +37,10 @@ or.. </br>
 Paragon Universal driver, </br>
 more cost effective, No speed limit, less energy consumption. </br>
 when HDD is offline, driver is better, Only 20second wait for drive to turn-on, No boot time, No log-in. </br>
+some Encrypted drives require log-in </br>
 3x machines is too much energy, $, 3x keyboards, 3x screens, 3x mouse, etc.. </br>
-using VNC simplyfy things, but still too much, to move files, </br>
-Making Backups between Trifecta becomes a Nightmare. </br>
+using VNC simplyfy things, but still too much, just to move files, </br>
+Making Backups between the Trifecta becomes a Nightmare. </br>
 
 Paragon UAPFS Universal-APFS driver, works up to Kernel 5.19 </br>
 Newer Kernel support "in development." </br>
@@ -68,14 +69,14 @@ Apple Bootcamp drivers allow to Read/Write HFS+ in Windows, haven tested over 2T
 XFS is the best file system for large drives 18TB, Linux Only, havent tested ZFS, APFS. </br>
 Paragon has Read-Only XFS drivers for OSX and Windows. </br>
 after consideration, </br>
-APFS could become the best crossover file system, </br>
+APFS could become the best crossover file system over 2TB, </br>
 R/W all Operating Systems, </br>
-if paragon makes R/W XFS for Windows & OSX, i prefer XFS, </br>
+if paragon makes R/W XFS for Windows & OSX, i would prefer XFS, </br>
 APFS could be like ExFAT but better. </br>
-Over 2TB 2nd best option: </br>
-Paragon HFS+  </br>
+but HFS is more complete right Now, Not able to format APFS in Linux is a problem. </br>
+Paragon HFS+ havent tested if works over 2TB, </br>
 Under 2TB option: </br>
-Linux HFSplus. </br>
+Linux HFSplus is best option. </br>
 to make easier for people to jump into Linux, from another OS. </br>
 
 $ mount -t uapfs \ḑev\sd** \media\uapfs </br>
@@ -83,7 +84,7 @@ $ umount -t uapfs \ḑev\sd** \media\uapfs </br>
 
 Apple released HFS+ and APFS as Open Source, </br>
 but Nobody has created a Good version for Linux, </br>
-APFS is Open, search apple developer website. </br>
+search apple developer website. </br>
 Paragon downloaded Apple source code, created a "working" but incomplete version, </br>
 similar to FUSE https://osxfuse.github.io/ for Linux & Win. </br>
 same HFS+, someone downloaded the source code from Apple, and created a Free version for Linux called HFSplus, but incomplete. </br>
@@ -98,10 +99,10 @@ https://github.com/Paragon-Software-Group/paragon_apfs_sdk_ce </br>
 
 ----------
 
-## What does No-Journaled Really mean?
+## What does HFSplus No-Journaled Really mean?
 
-it means that sometimes, when mounted, wont Write. </br>
-because it had an error previously, Not shutdown properly, power failure, Dolphin or Nautilus crash, Not enough memory, etc..  </br>
+it means that sometimes, when mounted, wont Write in Linux. </br>
+because it had an error, Not shutdown properly, power failure, Dolphin or Nautilus crash, Not enough memory, etc..  </br>
 the sollution is very simple: </br>
 do a file system check, unmounted, Not removed... still visible in $ ls /dev </br>
 
