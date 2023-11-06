@@ -33,6 +33,7 @@ Linux HFSplus is an option, but has some issues. </br>
 
 Workaround: </br>
 have 3 machines, using 10Gbps SFP+ Network, SFP+ 10G Router limited to 1200MB/s. </br>
+or.. </br>
 Paragon Universal driver is more cost effective, No speed limit, less energy consumption. </br>
 when HDD is offline, driver is better. </br>
 3 machines is too much energy, $, 3x keyboards, 3x screens, 3x mouse, etc.. </br>
