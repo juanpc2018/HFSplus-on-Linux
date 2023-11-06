@@ -5,7 +5,7 @@ HDD formated in Linux with HFSplus are called "untitled" </br>
 if you have multiple drives/partitions when mounted are called: "untitled1", 2, 3, etc..., </br>
 Requires Real OSX 10.6 or Newer to rename HFSplus HHDs, Drives or Partitions. </br>
 HFS+ Journaled can be Read in Linux, No Write, upto 2TB. </br>
-HFSplus No-Journaled can be RW in Linux, upto 2TB. </br>
+HFSplus No-Journaled can R/W in Linux, upto 2TB. </br>
 
 there are alternatives like: paid Linux drivers from Paragon: </br> 
 https://www.paragon-software.com/home/apfs-linux/ </br>
