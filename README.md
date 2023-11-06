@@ -11,6 +11,8 @@ there are alternatives like: paid Linux drivers from Paragon: </br>
 https://www.paragon-software.com/home/apfs-linux/ </br>
 https://www.paragon-software.com/home/ntfs-linux-professional/ </br>
 
+----------
+
 ## Why HFSplus? 
 
 people that need to move files from Windows to OSX to Linux, </br>
