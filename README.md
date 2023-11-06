@@ -90,12 +90,27 @@ https://github.com/Paragon-Software-Group/paragon_apfs_sdk_ce </br>
 ## What does No-Journaled really means?
 
 it means that sometimes, when mounted, wont Write,  </br>
-because it had an error previously, power failure, Dolphin or Nautilus crash, Not enough memory, etc..  </br>
+because it had an error previously, was Nto shutdown properly, power failure, Dolphin or Nautilus crash, Not enough memory, etc..  </br>
 the sollution is very simple: </br>
 do a file system check, unmounted, but Not removed... </br>
+
 using gnome-disks or gparted, umount the drive,  </br>
 but before umount, see what physical path it has, </br>
-example: </br>
-if its an external NVMe with a USN3.0 case,  </br>
+and mount again, Problem SOLVED. </br>
+Journaled does that automatically, recording a log of all changes done, in a small portion of the HDD. </br>
+No-Journaled wont allow to Write, unless you solve the problem manually. </br>
 
-/dev/
+example: </br>
+if its an external NVMe with an USN3.0 case,  </br>
+$ sudo fsck.hfs -f /dev/nvme0n1p4 </br>
+or standard HDD-USB </br>
+$ sudo fsck.hfs -f /dev/sdc1 </br>
+
+$ sudo mkdir untitled1 </br>
+$ sudo mount -t hfsplus -o rw /dev/sdc1 /media/(whoami)/untitled1 </br>
+
+the default mounting point is /mnt/untitled </br>
+but /media/(whoami)/ is ok, but if you reboot the machine often a custom mounting point it becomes annoyin, </br>
+unless you add to fstab configuration file.
+
+$ cat /etc/fstab
