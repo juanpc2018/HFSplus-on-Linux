@@ -115,7 +115,7 @@ Journaled does that automatically, recording a log of changes in a small portion
 No-Journaled wont allow to Write, unless you solve the problem manually. </br>
 
 example: </br>
-if its an external NVMe with an USN3.0 case,  </br>
+if its an external NVMe with an USB3.0 case or Thunderbolt to PCIe case,  </br>
 $ sudo fsck.hfs -f /dev/nvme0n1p4 </br>
 or standard HDD-USB </br>
 $ sudo fsck.hfs -f /dev/sdc1 </br>
@@ -123,8 +123,11 @@ $ sudo fsck.hfs -f /dev/sdc1 </br>
 $ sudo mkdir untitled1 </br>
 $ sudo mount -t hfsplus -o rw /dev/sdc1 /media/(whoami)/untitled1 </br>
 
-the default mounting point is /mnt/untitled </br>
-but /media/(whoami)/ is ok, but if you reboot the machine often a custom mounting point it becomes annoyin, </br>
-unless you add to fstab configuration file.
+default mounting point is /mnt/untitled for the 1st hfsplus drive, </br>
+but /media/(whoami)/ is ok, </br>
+if you reboot the machine often a custom mounting point becomes a nightmare, </br>
+unless you add to fstab configuration file. </br>
 
-$ cat /etc/fstab
+$ cat /etc/fstab </br>
+
+or use the default automatic mounting point /mnt/untitled  </br>
