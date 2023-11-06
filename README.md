@@ -19,7 +19,7 @@ people that need to move files from Windows to OSX to Linux, </br>
 in an office or workplace, </br>
 have a hard time doing it. </br>
 Windows & OSX can Read & Write ExFAT, </br>
-but ExFAT is Not the best file system. </br>
+but ExFAT is Not the best, </br>
 has many problems with long file names, or file names with special characters, </br>
 if you save a webpage, and move it, it becomes a nightmare. </br>
 most of the times requires compression and decompression, </br>
