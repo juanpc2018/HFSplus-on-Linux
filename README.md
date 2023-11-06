@@ -1,6 +1,6 @@
 # HFSplus-on-Linux
 
-Linux Free HFSplus driver is limited to 2TB, No Journal, No Raname Volumes, etc... </br>
+Linux Free HFSplus driver is limited to 2TB, No Journal, No Raname, etc... </br>
 HDD formated in Linux with HFSplus are called "untitled" </br>
 if you have multiple drives/partitions when mounted are called: "untitled1", 2, 3, etc..., </br>
 Requires Real OSX 10.6 or Newer to rename HFSplus HHDs, Drives or Partitions. </br>
