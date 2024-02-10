@@ -25,7 +25,7 @@ if you save a webpage, and move it, it becomes a nightmare. </br>
 most of the times requires compression and decompression, </br>
 but if you need to move too much files, </br>
 it becomes 2x nightmares. </br>
-a quest searching the best Trifecta FS driver, for: </br>
+a quest searching the best Trifecta driver: </br>
 Win, Mac, Linux. </br>
 ExFAT is discarded, FAT32 worse, NTFS discarded, </br>
 Linux Free APFS driver is super bad </br>
@@ -104,14 +104,12 @@ https://github.com/Paragon-Software-Group/paragon_apfs_sdk_ce </br>
 it means that sometimes, when mounted, wont Write in Linux. </br>
 because it had an error, Not shutdown properly, power failure, Dolphin or Nautilus crash, Not enough memory, etc..  </br>
 the sollution is very simple: </br>
-do a file system check, unmounted, Not removed... still visible in $ ls /dev </br>
+do a file system check, unmounted, Not removed... </br>
+but still visible in $ ls /dev </br>
 
 using gnome-disks or gparted, umount the drive,  </br>
 but before umount, see what physical path it has, </br>
-check and mount again, Problem SOLVED. </br>
-
-Journaled does that automatically, recording a log of changes in a small portion of the HDD. </br>
-No-Journaled wont allow to Write, unless you solve the problem manually. </br>
+fs.check and mount again, Problem SOLVED. </br>
 
 example: </br>
 if its an external NVMe with an USB3.0 case or Thunderbolt to PCIe case,  </br>
@@ -131,3 +129,9 @@ $ cat /etc/fstab </br>
 
 or use the default automatic mounting point /mnt/untitled  </br>
 despite all that, would be very interesting to see a Linux distro with HFSplus </br>
+
+Journaled does fs.check automatically, recording a log of changes in a small portion of the HDD. </br>
+No-Journaled wont allow to Write, unless you solve the problem manually. </br>
+fsck.hfs works 99% of the time, but the 1% cannot recover the error,</br>
+also happens in OSX, in that scenario the only way is: </br>
+copy / rsync to a new HDD & delete the old HDD.</br>
